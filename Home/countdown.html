@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="shortcut icon" href="#enterhere">
+  <title>Project DTC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <style type="text/css">
+    .lead{font-size: 50px;}
+    .1{font-size: 100px;}
+  </style>
+</head>
+<body>
+
+
+<div id="content2" class="shadow1">
+<div class="well well-small shadow1" style="margin-top: 175px;">
+<br><h1 id="countdown" style="font-size:100px; font-weight:100;"></h1><br>
+</div>
+<p class="lead"><br>Project DTC<br><br>Coming Soon!<br><br></p>
+</div>
+
+  <script type="text/javascript">
+    var target_date = new Date("Oct 30, 2013").getTime();
+    var days, hours, minutes, seconds;
+    var countdown = document.getElementById("countdown");
+    setInterval(function () {
+    var current_date = new Date().getTime();
+    var seconds_left = (target_date - current_date) / 1000;
+    days = parseInt(seconds_left / 86400);
+    seconds_left = seconds_left % 86400;
+    hours = parseInt(seconds_left / 3600);
+    seconds_left = seconds_left % 3600;
+    minutes = parseInt(seconds_left / 60);
+    seconds = parseInt(seconds_left % 60);
+    countdown.innerHTML = days + "d, " + hours + "h, "
+    + minutes + "m, " + seconds + "s";  }, 1000);
+  </script>
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</div>
+</body>
+</html>

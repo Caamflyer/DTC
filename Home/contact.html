@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="shortcut icon" href="#enterhere">
+  <title>Project DTC - Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <style type="text/css">
+  #content1 {margin: 0 auto;}
+  #content2 {margin: 0 auto; margin-top:25px; width: 1264px; text-align: center;}
+  #content2 p {padding: 0 10px;}
+  #content2 h1 {font-weight: 200;}
+  .item:img {width: auto;}
+  input#name {width: 47%;}
+  input#email {width: 47%;}
+  textarea#message {width: 97.1%; margin-left: -18px;}
+  </style>
+
+</head>
+<body>
+  
+<div id="content1">
+<!-- Navigation Bar-->
+  <div class="navbar">
+    <div class="navbar-inner">
+      <a class="brand" href="index">Project DTC</a>
+      <ul class="nav">
+
+        <li><a href="index"><i class="icon-home"></i> Home</a></li>
+
+        <li><a href="play"><i class="icon-play"></i> Play</a></li>
+
+        <li><a href="info"><i class="icon-th-large"></i> Information</a></li>
+
+        <!-- <li><a href="#">Forums</a></li>
+
+        <li><a href="#">Stats</a></li> -->
+
+        <li><a href="donate"><i class="icon-shopping-cart"></i> Donate</a></li>
+      </ul>
+      <ul class="nav pull-right">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-plus-sign"></i> Login <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <!-- <li><a href="#">Login</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Register</a></li> -->
+            <li><a href="#">Coming Soon!</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+    
+<!-- End Of Navigation Bar-->
+
+
+<!-- Content -->
+
+<div id="content2">
+  <div class="well well-small" style="margin-top:-25px;">
+        <h1>Contact</h1>
+      </div>
+  <div class="tabbable tabs-left">
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#1" data-toggle="tab">General Inquiries</a></li>
+    <li><a href="#2" data-toggle="tab">Feedback</a></li>
+    <li><a href="#3" data-toggle="tab">Ideas</a></li>
+    <li><a href="#4" data-toggle="tab">Website Issues</a></li>
+    <li><a href="#5" data-toggle="tab">Other</a></li>
+  </ul>
+  <div class="tab-content">
+    <div id="1" class="tab-pane active">
+        <h1>General Inquiries</h1><br>
+          <form action="contactphp/contactgeneralinquires.php" method="post">
+            <div class="controls controls-row">
+              <input id="name" name="name" type="text" class="span3" placeholder="Name"> 
+              <input id="email" name="email" type="email" class="span3" placeholder="Email address">
+            </div>
+
+            <div class="controls">
+              <textarea id="message" name="message" class="span6" placeholder="General Inquiries" rows="5"></textarea>
+            </div>
+      
+            <div class="controls">
+              <button id="contact-submit" type="submit" class="btn btn-primary input-medium">Submit</button>
+            </div>
+          </form>
+    </div>
+    <div id="2" class="tab-pane">
+        <h1>Feedback</h1><br>
+          <form action="contactphp/contactfeedback.php" method="post">
+            <div class="controls controls-row">
+              <input id="name" name="name" type="text" class="span3" placeholder="Name"> 
+              <input id="email" name="email" type="email" class="span3" placeholder="Email address">
+            </div>
+
+            <div class="controls">
+              <textarea id="message" name="message" class="span6" placeholder="Feedback" rows="5"></textarea>
+            </div>
+      
+            <div class="controls">
+              <button id="contact-submit" type="submit" class="btn btn-primary input-medium">Submit</button>
+            </div>
+          </form>
+    </div>
+    <div id="3" class="tab-pane">
+        <h1>Ideas</h1><br>
+          <form action="contactphp/contactideas.php" method="post">
+            <div class="controls controls-row">
+              <input id="name" name="name" type="text" class="span3" placeholder="Name"> 
+              <input id="email" name="email" type="email" class="span3" placeholder="Email address">
+            </div>
+
+            <div class="controls">
+              <textarea id="message" name="message" class="span6" placeholder="Ideas" rows="5"></textarea>
+            </div>
+      
+            <div class="controls">
+              <button id="contact-submit" type="submit" class="btn btn-primary input-medium">Submit</button>
+            </div>
+          </form>
+    </div>
+    <div id="4" class="tab-pane">
+        <h1>Website Issues</h1><br>
+          <form action="contactphp/contactwebsiteissues.php" method="post">
+            <div class="controls controls-row">
+              <input id="name" name="name" type="text" class="span3" placeholder="Name"> 
+              <input id="email" name="email" type="email" class="span3" placeholder="Email address">
+            </div>
+
+            <div class="controls">
+              <textarea id="message" name="message" class="span6" placeholder="Website Issues" rows="5"></textarea>
+            </div>
+      
+            <div class="controls">
+              <button id="contact-submit" type="submit" class="btn btn-primary input-medium">Submit</button>
+            </div>
+          </form>
+    </div>
+    <div id="5" class="tab-pane">
+        <h1>Other</h1><br>
+          <form action="contactphp/contactother.php" method="post">
+            <div class="controls controls-row">
+              <input id="name" name="name" type="text" class="span3" placeholder="Name"> 
+              <input id="email" name="email" type="email" class="span3" placeholder="Email address">
+            </div>
+
+            <div class="controls">
+              <textarea id="message" name="message" value="" class="span6" placeholder="Other" rows="5"></textarea>
+            </div>
+      
+            <div class="controls">
+              <button id="contact-submit" type="submit" class="btn btn-primary input-medium">Submit</button>
+            </div>
+          </form>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Of Content -->
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</div>
+</body>
+<footer>
+  <ul class="nav nav-pills"><hr>
+    <li><a href="index">Home</a></li>
+    <li><a href="revision">Revisions</a></li>
+    <li><a href="staff">Staff</a></li>
+    <!-- <li><a href="#">Forum</a></li>
+    <li><a href="#">Stats</a></li> -->
+    <li><a href="contact">Contact</a></li>
+</ul>
+<ul class="nav nav-pills pull-right">
+    <li><a href="#">&copy;ProjectDTC</a></li>
+  </ul>
+</footer>
+</html>
